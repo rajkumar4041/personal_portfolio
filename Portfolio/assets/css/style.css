@@ -24,6 +24,15 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/* to load fast  */
+.resume {
+  background-color: rgba(4, 11, 20, 0.2);
+  background-image: url("../../assets/img/bg/benjamin-suter-mlOvsx4xdaA-unsplash.jpg"); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #dff3fc;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -77,7 +86,8 @@ h6 {
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
+  width: 130px;
+  height: 127px;
   border: 8px solid #2c2f3f;
 }
 
@@ -158,7 +168,7 @@ h6 {
   list-style: none;
 }
 
-.nav-menu>ul>li {
+.nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
@@ -184,7 +194,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover>a {
+.nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
@@ -192,7 +202,7 @@ h6 {
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-.nav-menu li:hover>a i {
+.nav-menu li:hover > a i {
   color: #149ddd;
 }
 
@@ -287,10 +297,16 @@ h6 {
     line-height: 36px;
   }
 
+  #hero {
+    background-attachment: fixed;
+    background-size: 80em;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 30px;
   }
 }
 
@@ -337,6 +353,8 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -423,6 +441,9 @@ section {
 /*--------------------------------------------------------------
 # skills
 --------------------------------------------------------------*/
+.skills {
+  color: white;
+}
 .skills .progress {
   height: 60px;
   display: block;
@@ -432,12 +453,12 @@ section {
 
 .skills .progress .skill {
   padding: 0;
+  color: white;
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
 }
 
 .skills .progress .skill .val {
@@ -460,18 +481,36 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
+/* resume download button css */
+.download-btn {
+  background-color: #f00285; /* Green */
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #e2e8f1;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #f7faff;
   position: relative;
 }
 
@@ -515,7 +554,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #e8ebee;
 }
 
 /*--------------------------------------------------------------
@@ -526,11 +565,11 @@ section {
 }
 
 .portfolio #portfolio-flters {
-  padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #1b73ad;
+  color: white;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -566,12 +605,12 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(19, 102, 153, 0.5);
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 40;
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
@@ -602,7 +641,7 @@ section {
   background: rgba(20, 157, 221, 0.95);
 }
 
-.portfolio .portfolio-wrap .portfolio-links a+a {
+.portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #37b3ed;
 }
 
@@ -635,7 +674,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -643,7 +685,10 @@ section {
   border: 1px solid #149ddd;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #149ddd;
 }
 
@@ -666,7 +711,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -742,6 +787,14 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+  background-color: #040b14;
+  background-image: url("../../assets/img/bg/jr-korpa-stwHyPWNtbI-unsplash.jpg"); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -937,7 +990,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -992,7 +1045,7 @@ section {
   padding: 10px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
@@ -1001,7 +1054,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #37b3ed;
 }
 
@@ -1037,11 +1090,11 @@ section {
   font-size: 15px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #0e2442;
@@ -1074,7 +1127,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background-color: #040b14;
 }
 
 #footer .copyright {
@@ -1090,23 +1143,27 @@ section {
   width: auto;
 }
 
-
-.h5{
-  
+.h5 {
   color: white;
 }
-.card-body cc-education-header{
-  background-color: #040b14,color(srgb red green rgb(0, 255, 191));
+
+/* #education-spec {
+  background-color: #040b14;
+} */
+.bg-primary-for-edu {
+  background-color: rgb(16, 149, 197);
 }
-.background_panel{
-  background-color: #040b14,color(srgb red green rgb(0, 255, 191));
+
+.card-body cc-education-header {
+  background-color: #040b14, color(srgb red green rgb(0, 255, 191));
+}
+.background_panel {
+  background-color: #040b14, color(srgb red green rgb(0, 255, 191));
   color: white;
   font-size: medium;
 }
 
-
-
-.footer{
+.footer {
   padding: 15px;
   color: #f4f6fd;
   font-size: 14px;
@@ -1115,7 +1172,6 @@ section {
   width: 300px;
   z-index: 9999;
   background: #040b14;
-
 }
 #footer .copyright {
   text-align: center;
@@ -1128,40 +1184,38 @@ section {
   }
 }
 
-.section-footer .container .credits3{
+.section-footer .container .credits3 {
   display: flex;
   justify-content: center;
-  align-items:  center;
-  font:  bold;
+  align-items: center;
+  font: bold;
   color: rgb(8, 80, 79);
 }
-.download{
+.download {
   height: 50px;
   width: 50px;
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: center; */
 
-    padding: 5px;
-    color: #f4f6fd;
-    font-size: 14px;
-    /* position: fixed; */
-    left: 50%;
-    bottom: 0;
-   
-  
-  
+  padding: 5px;
+  color: #f4f6fd;
+  font-size: 14px;
+  /* position: fixed; */
+  left: 50%;
+  bottom: 0;
 }
-.download a img{
+.download a img {
   height: 3.8vw;
-
 }
- .loc{
-width: 100%; height: auto;}
-.loc a img{
+.loc {
+  width: 100%;
+  height: auto;
+}
+.loc a img {
   width: 20vw;
 }
-.loc1{
-
-    width: auto; height: auto;
+.loc1 {
+  width: auto;
+  height: auto;
 }

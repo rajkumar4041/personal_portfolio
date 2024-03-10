@@ -1,393 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Personal portfolio - Rajkumar</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Personal portfolio - Rajkumar</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.jpg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.jpg" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!--  Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- ======================================================== -->
+  </head>
 
-  <!--  Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-
-  <!-- ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="/Portfolio/assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Rajkumar Rathod</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/rajkumar.rathod.404error" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://instagram.com/rajkumar.rt___?igshid=MzNlNGNkZWQ4Mg==" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://github.com/rajkumar4041" class="google-plus"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/rajkumar-rathod-a9b94a201" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div style="margin-top: 1.5em" class="d-flex flex-column">
+        <div class="profile">
+          <h1 style="margin-top: 3em" class="text-light">
+            <a href="index.html">Rajkumar Rathod</a>
+          </h1>
+          <div class="social-links mt-3 text-center">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a
+              href="https://www.facebook.com/rajkumar.rathod.404error"
+              class="facebook"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://instagram.com/rajkumar.rt___?igshid=MzNlNGNkZWQ4Mg=="
+              class="instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://github.com/rajkumar4041" class="google-plus"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rajkumar-rathod-a9b94a201"
+              class="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
         </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li>
+              <a href="#hero" class="nav-link scrollto active"
+                ><i class="bx bx-home"></i> <span>Home</span></a
+              >
+            </li>
+            <li>
+              <a href="#about" class="nav-link scrollto"
+                ><i class="bx bx-user"></i> <span>About</span></a
+              >
+            </li>
+            <li>
+              <a href="#resume" class="nav-link scrollto"
+                ><i class="bx bx-file-blank"></i> <span>Resume</span></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link scrollto"
+                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+              >
+            </li>
+            <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+            <li>
+              <a href="#contact" class="nav-link scrollto"
+                ><i class="bx bx-envelope"></i> <span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
       </div>
+    </header>
+    <!-- End Header -->
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-              <span>Portfolio</span></a></li>
-          <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Rajkumar Rathod</h1>
-      <p>I'm <span class="typed" data-typed-items="Software Developer, Web Developer,Data Analyst"></span></p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I'm Well prepared and Skilled student in computer engineering. I consider my self a responsible and orderly
-            person.To work in a firm with a professional work where I can utilize and apply my knowledge, to grow while
-            fulfilling organizational goals.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="/Portfolio/assets/img/profile-img.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Software,AI/ML Developer &amp; Web Developer.</h3>
-            <p class="fst-italic">
-              To work for a professionally managed company with a good organizational objective & friendly environment,
-              in a capacity that offers responsibility, challenge, job satisfaction and scope for organizational and
-              personal, development and growth.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 Feb 2001</span></li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9373323977</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Yavatmal, MH</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's of
-                      Engineeering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong>
-                    <span>rajkumarrathod414@gmail.com</span>
-                  </li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
-                </ul>
-              </div>
-            </div>
-            <p>
-              This personal portfolio repository is not only a testament to my passion for computer science but also a demonstration of my commitment to continuous learning and growth. It serves as a platform for potential employers, collaborators, or clients to explore my work, assess my capabilities, and consider me for relevant opportunities. I am eager to share my projects and experiences and look forward to connecting with individuals who share the same enthusiasm for technology and innovation.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-            <!-- added  -->
-            <div class="progress">
-              <span class="skill">Python <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-
-              <!-- .. -->
-            </div>
-            <div class="progress">
-              <span class="skill">Java <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">DSA <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">php <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">MySql<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- EDUCATION SECTION -->
-    <section id="skills1" class=" education-section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Education</h2>
-        </div>
-
-        <div class="container cc-education">
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary background_panel " data-aos="fade-right" data-aos-offset="50"
-                data-aos-duration="500">
-                <div class="card-body cc-education-header,back-to-top background_panel">
-                  <p>2020 - 2023</p>
-                  <div class="h5">Bachelor of Engineering</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">B.E (Computer Engineering)</div>
-                  <p class="category">University of SGBAU.</p>
-                  <p class="category">College : Jagadambha College Of Engineering And Technology.</p>
-                  <p> CGPA : 8.93 </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header background_panel">
-                  <p>2017 - 2020</p>
-                  <div class="h5">Diploma</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">Diploma in Computer Engineering</div>
-                  <p class="category">University of MSBTE.</p>
-                  <p class="category">College : Pimpri Chinchwad Polytechnic College.</p>
-                  <p> Percentage :- 83.34% </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="row">
-              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body cc-education-header background_panel">
-                  <p>2017</p>
-                  <div class="h5">School</div>
-                </div>
-              </div>
-              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                <div class="card-body">
-                  <div class="h5">SSC</div>
-                  <p class="category">School : Shri Shivaji Highschool.</p>
-                  <p> Percentage :- 80.40% </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="hero-container" data-aos="fade-in">
+        <h1>Rajkumar Rathod</h1>
+        <p>
+          I'm
+          <span
+            class="typed"
+            data-typed-items="Software Developer, React Developer"
+          ></span>
+        </p>
       </div>
     </section>
-    <!-- end of education section -->
+    <!-- End Hero -->
 
+    <!-- #TODO contact section -->
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>About</h2>
+            <p>
+              I'm Well prepared and Skilled student in computer engineering. I
+              consider my self a responsible and orderly person.To work in a
+              firm with a professional work where I can utilize and apply my
+              knowledge, to grow while fulfilling organizational goals.
+            </p>
+          </div>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Throughout my academic journey, I have actively engaged in various projects that have allowed me to apply
-            my theoretical knowledge to practical solutions. I have developed web applications and have worked with
-            databases such as MySQL to store and retrieve data efficiently. These experiences have honed my
-            problem-solving abilities and strengthened my understanding of software development principles.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="section-title">
-              <h2>Download Resume</h2>
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+              <img
+                src="/assets/img/profile-img.png"
+                class="img-fluid"
+                alt="Profile PNG Image"
+              />
             </div>
-
-            <div class="download "><a href="/Portfolio/Rajkumar Suresh Rathod.pdf" download>
-                <img class="loc1" src="/Portfolio/assets/img/download_icon.png" alt="download icon"></a>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h3>Software Developer</h3>
+              <p class="fst-italic">
+                `` To work for a professionally managed company with a good
+                organizational objective & friendly environment, in a capacity
+                that offers responsibility, challenge, job satisfaction and
+                scope for organizational and personal, development and growth.``
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Birthday:</strong> <span>1 Feb 2001</span>
+                    </li>
+                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>+91 9373323977</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>City:</strong> <span>Yavatmal, MH</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                      <span>22</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Degree:</strong>
+                      <span>Bachelor's of Engineeering</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>E-mail:</strong>
+                      <span>rajkumarrathod414@gmail.com</span>
+                    </li>
+                    <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
+                  </ul>
+                </div>
+              </div>
+              <p>
+                This personal portfolio repository is not only a testament to my
+                passion for computer science but also a demonstration of my
+                commitment to continuous learning and growth. It serves as a
+                platform for potential employers, collaborators, or clients to
+                explore my work, assess my capabilities, and consider me for
+                relevant opportunities. I am eager to share my projects and
+                experiences and look forward to connecting with individuals who
+                share the same enthusiasm for technology and innovation.
+              </p>
             </div>
-
           </div>
         </div>
+      </section>
+      <!-- End About Section -->
 
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Welcome to my portfolio! I am a passionate and dedicated computer science student with a strong interest in
-            software development and web technologies. This portfolio showcases my skills, projects, and experiences
-            gained throughout my academic journey and beyond.
-
-            With a solid foundation in programming languages such as Java, Python, and C++, I have undertaken various
-            projects that highlight my ability to solve complex problems and develop efficient solutions. I have also
-            worked extensively with web development technologies, including HTML, CSS, and JavaScript, to create
-            interactive and user-friendly websites.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All Projects</li>
-              <!-- <li data-filter=".filter-app">App</li> -->
-              <!-- <li data-filter=".filter-card">Card</li> -->
-              <!-- <li data-filter=".filter-web">Web</li> -->
-            </ul>
+      <!-- ======= Skills Section ======= -->
+      <section
+        style="background-color: black"
+        id="skills"
+        class="skills section-bg"
+      >
+        <div class="container">
+          <div class="section-title">
+            <h2 style="color: aliceblue">Skills</h2>
+            <p>
+              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            </p>
           </div>
-        </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row skills-content">
+            <div class="col-lg-6" data-aos="fade-up">
+              <!-- added  -->
+              <div class="progress">
+                <span class="skill">Python <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <!-- image -->
-              <img src="assets/img/portfolio/Timetable1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <!-- view image -->
-                <a href="assets/img/portfolio/Timetable.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Automatic-Time-Table-Generator"><i class="bx bx-plus"></i></a>
-                <!-- detail -->
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <!-- .. -->
+              </div>
+              <div class="progress">
+                <span class="skill">Java <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">DSA <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="progress">
+                <span class="skill">HTML <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="progress">
+                <span class="skill">CSS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">php <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">MySql<i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <!-- Add Slick Slider CSS -->
+      </section>
+      <!-- End Skills Section -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/website blocker1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/website blocker.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="WebGuard: Empowering Productivity with Website Blocker"><i
-                    class="bx bx-plus"></i></a>
-                <a href="four.html" title="More Details"><i class="bx bx-link"></i></a>
+      <!-- EDUCATION SECTION -->
+      <section id="education-spec">
+        <div class="container">
+          <div class="section-title">
+            <h2>Education</h2>
+          </div>
+
+          <div class="container cc-education">
+            <div class="card">
+              <div class="row">
+                <div
+                  class="col-md-3 bg-primary-for-edu background_panel"
+                  data-aos="fade-right"
+                  data-aos-offset="50"
+                  data-aos-duration="500"
+                >
+                  <div
+                    class="card-body cc-education-header,back-to-top background_panel"
+                  >
+                    <p>2020 - 2023</p>
+                    <div class="h5">Bachelor of Engineering</div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-9"
+                  data-aos="fade-left"
+                  data-aos-offset="50"
+                  data-aos-duration="500"
+                >
+                  <div class="card-body">
+                    <div class="h5">B.E (Computer Engineering)</div>
+                    <p class="category">University of SGBAU.</p>
+                    <p class="category">
+                      College : Jagadambha College Of Engineering And
+                      Technology.
+                    </p>
+                    <p>CGPA : 8.93</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div
+                  class="col-md-3 bg-primary-for-edu"
+                  data-aos="fade-right"
+                  data-aos-offset="50"
+                  data-aos-duration="500"
+                >
+                  <div class="card-body cc-education-header background_panel">
+                    <p>2017 - 2020</p>
+                    <div class="h5">Diploma</div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-9"
+                  data-aos="fade-left"
+                  data-aos-offset="50"
+                  data-aos-duration="500"
+                >
+                  <div class="card-body">
+                    <div class="h5">Diploma in Computer Engineering</div>
+                    <p class="category">University of MSBTE.</p>
+                    <p class="category">
+                      College : Pimpri Chinchwad Polytechnic College.
+                    </p>
+                    <p>Percentage :- 83.34%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div
+                  class="col-md-3 bg-primary-for-edu"
+                  data-aos="fade-right"
+                  data-aos-offset="50"
+                  data-aos-duration="500"
+                >
+                  <div class="card-body cc-education-header background_panel">
+                    <p>2017</p>
+                    <div class="h5">School</div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-9"
+                  data-aos="fade-left"
+                  data-aos-offset="50"
+                  data-aos-duration="500"
+                >
+                  <div class="card-body">
+                    <div class="h5">SSC</div>
+                    <p class="category">School : Shri Shivaji Highschool.</p>
+                    <p>Percentage :- 80.40%</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- end of education section -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/water monitor.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/water monitor.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title=" Water Tank Monitoring System."><i class="bx bx-plus"></i></a>
-                <a href="second.html" title="More Details"><i class="bx bx-link"></i></a>
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container">
+          <div class="section-title">
+            <h2 style="color: aliceblue; font-weight: bold">Resume</h2>
+            <p style="color: white; font-weight: bold">
+              Throughout my academic journey, I have actively engaged in various
+              projects that have allowed me to apply my theoretical knowledge to
+              practical solutions. I have developed web applications and have
+              worked with databases such as MySQL to store and retrieve data
+              efficiently. These experiences have honed my problem-solving
+              abilities and strengthened my understanding of software
+              development principles.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+              <div class="section-title">
+                <h2 style="color: aliceblue; font-weight: bold">
+                  Download Resume
+                </h2>
+              </div>
+
+              <div class="download">
+                <a
+                  href="/Rajkumar Suresh Rathod.pdf"
+                  download
+                  class="download-btn"
+                >
+                  <span>Download</span>
+                </a>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- End Resume Section -->
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+      <!-- ======= Portfolio Section ======= -->
+
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>
+              Welcome to my portfolio! I am a passionate and dedicated computer
+              science student with a strong interest in software development and
+              web technologies. This portfolio showcases my skills, projects,
+              and experiences gained throughout my academic journey and beyond.
+              With a solid foundation in programming languages such as Java,
+              Python, and C++, I have undertaken various projects that highlight
+              my ability to solve complex problems and develop efficient
+              solutions. I have also worked extensively with web development
+              technologies, including HTML, CSS, and JavaScript, to create
+              interactive and user-friendly websites.
+            </p>
+          </div>
+
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li
+                  style="color: aliceblue"
+                  data-filter="*"
+                  class="filter-active"
+                >
+                  All Projects
+                </li>
+                <!-- <li data-filter=".filter-app">App</li> -->
+                <!-- <li data-filter=".filter-card">Card</li> -->
+                <!-- <li data-filter=".filter-web">Web</li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <!-- image -->
+                <img
+                  src="assets/img/portfolio/Timetable1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <!-- view image -->
+                  <a
+                    href="assets/img/portfolio/Timetable.png"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox"
+                    title="Automatic-Time-Table-Generator"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <!-- detail -->
+                  <a href="portfolio-details.html" title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/website blocker1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/website blocker.png"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox"
+                    title="WebGuard: Empowering Productivity with Website Blocker"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a href="four.html" title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/water monitor.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/water monitor.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox"
+                    title=" Water Tank Monitoring System."
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a href="second.html" title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
@@ -398,256 +619,378 @@
             </div>
           </div> -->
 
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/jarvis.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/jarvis.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Voice Automation System"><i class="bx bx-plus"></i></a>
-                <a href="third.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/image_port.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/image_port2.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Personal Portfolio"><i class="bx bx-plus"></i></a>
-                <a href="five.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/rest1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/rest.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="System Operations Management and User Well-being Project"><i class="bx bx-plus"></i></a>
-                <a href="six.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- End Portfolio Section -->
-
-
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Achievements </h2>
-          <p>Throughout My CS program, you consistently maintained a stellar academic record, earning top grades in
-            challenging coursework. Your strong foundation in computer science principles, algorithms, data structures,
-            and programming languages has equipped with a deep understanding of the field. ability to grasp complex
-            concepts quickly and apply them effectively in practical scenario</p>
-        </div>
-        <br>
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Secured " 2nd Rank " position in Project Exhibition Cum Competition organized by Computer Engineering
-                  Department at Pimpri Chinchwad Polytechnic ,pune
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Successfully cleared the assessment for the role of Broadband Technician(TEL/Q0102) conforming to
-                  National
-                  Skill Qualifications Framework Level-4
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                   Secured " 3rd Rank " position in Reverse Coding organized by Computer Engineering Department at
-                  Pimpri
-                  Chinchwad Polytechnic ,pune.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Runner up in zest 18-sherlock homes organized by computer departrment at pimpari Chinchwad
-                  Polytechnic-pune
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  get excellence in paper presentation at jagadambha collage of engineering and technology,Yavatmal
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Welcome to the Contact section of my portfolio! This is the space where you can get in touch with me
-            directly to discuss collaborations, job opportunities, or any inquiries you may have. I value open
-            communication and believe that meaningful connections can lead to exciting ventures.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>At.zobadi Ta.ner di.yavatmal</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>rajkumarrathod414@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 9373323977</p>
-              </div>
-              <div class="loc">
-                <a
-                  href="https://www.google.com/maps/place/Yavatmal,+Maharashtra,+India/@20.388538,78.1218607,14.86z/data=!4m6!3m5!1s0x3bd3e8cc8bb44edd:0x4877adea41ecbee0!8m2!3d20.3899385!4d78.1306846!16zL20vMDZ3OTht!5m2!1e2!1e4?hl=en-US&entry=ttu">
-
-                  <img src="/Portfolio/assets/img/portfolio/location/location1.png" alt=""></a>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/jarvis.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/jarvis.jpg"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox"
+                    title="Voice Automation System"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a href="third.html" title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/image_port.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/image_port2.png"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox"
+                    title="Personal Portfolio"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a href="five.html" title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/rest1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/rest.png"
+                    data-gallery="portfolioGallery"
+                    class="portfolio-lightbox"
+                    title="System Operations Management and User Well-being Project"
+                    ><i class="bx bx-plus"></i
+                  ></a>
+                  <a href="six.html" title="More Details"
+                    ><i class="bx bx-link"></i
+                  ></a>
+                </div>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2 style="color: aliceblue">Achievements</h2>
+            <p style="color: aliceblue">
+              Throughout My CS program, you consistently maintained a stellar
+              academic record, earning top grades in challenging coursework.
+              Your strong foundation in computer science principles, algorithms,
+              data structures, and programming languages has equipped with a
+              deep understanding of the field. ability to grasp complex concepts
+              quickly and apply them effectively in practical scenario
+            </p>
+          </div>
+          <br />
+          <div
+            class="testimonials-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item" data-aos="fade-up">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Secured " 2nd Rank " position in Project Exhibition Cum
+                    Competition organized by Computer Engineering Department at
+                    Pimpri Chinchwad Polytechnic ,pune
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-1.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Successfully cleared the assessment for the role of
+                    Broadband Technician(TEL/Q0102) conforming to National Skill
+                    Qualifications Framework Level-4
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Secured " 3rd Rank " position in Reverse Coding organized by
+                    Computer Engineering Department at Pimpri Chinchwad
+                    Polytechnic ,pune.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-3.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Runner up in zest 18-sherlock homes organized by computer
+                    departrment at pimpari Chinchwad Polytechnic-pune
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-4.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    get excellence in paper presentation at jagadambha collage
+                    of engineering and technology,Yavatmal
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-5.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section style="background-color: black" id="contact" class="contact">
+        <div class="container">
+          <div class="modal fade" id="emailModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Email Status</h4>
+                  <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                  </button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body" id="emailModalBody">
+                  <!-- Email status message will be displayed here -->
+                </div>
+              </div>
+            </div>
           </div>
 
+          <div class="section-title">
+            <h2 style="color: aliceblue">Contact</h2>
+            <p style="color: aliceblue">
+              Welcome to the Contact section of my portfolio! This is the space
+              where you can get in touch with me directly to discuss
+              collaborations, job opportunities, or any inquiries you may have.
+              I value open communication and believe that meaningful connections
+              can lead to exciting ventures.
+            </p>
+          </div>
+
+          <div class="row" data-aos="fade-in">
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>At.zombadi Ta.ner di.yavatmal</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>rajkumarrathod414@gmail.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91 9834724829</p>
+                </div>
+                <div class="loc">
+                  <a
+                    href="https://www.google.com/maps/place/Yavatmal,+Maharashtra,+India/@20.388538,78.1218607,14.86z/data=!4m6!3m5!1s0x3bd3e8cc8bb44edd:0x4877adea41ecbee0!8m2!3d20.3899385!4d78.1306846!16zL20vMDZ3OTht!5m2!1e2!1e4?hl=en-US&entry=ttu"
+                  >
+                    <img
+                      src="/Portfolio/assets/img/portfolio/location/location1.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
 
+    <!-- ======= Footer ======= -->
+
+    <footer style="background-color: black" id="footer">
+      <div class="container">
+        <div class="copyright">&copy; Copyright All rights reserved</div>
+        <div class="credits2">
+          <a> Rajkumar Rathod</a>
+        </div>
       </div>
-    </section><!-- End Contact Section -->
+    </footer>
+    <!-- End  Footer -->
 
-  </main><!-- End #main -->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- ======= Footer ======= -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright All rights reserved
+    <section
+      style="background-color: black; color: aliceblue"
+      class="section-footer"
+    >
+      <div class="container">
+        <div class="credits3" style="color: aliceblue; font-weight: bold">
+          <a>Designed by | Rajkumar Rathod</a>
+        </div>
       </div>
-      <div class="credits2">
-        Rajkumar Rathod</a>
-      </div>
-    </div>
-
-  </footer><!-- End  Footer -->
-
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <section class="section-footer">
-    <div class="container">
-
-      <div class="credits3">
-        Designed by | Rajkumar Rathod</a>
-      </div>
-
-
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
