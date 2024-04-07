@@ -57,7 +57,7 @@
 
     <!-- ======= Header ======= -->
     <header id="header">
-      <div style="margin-top: 1.5em" class="d-flex flex-column">
+      <div style="margin-top: em" class="d-flex flex-column">
         <div class="profile">
           <h1 style="margin-top: 3em" class="text-light">
             <a href="index.html">Rajkumar Rathod</a>
@@ -131,8 +131,8 @@
           I'm
           <span
             class="typed"
-            data-typed-items="Software Developer, React Developer"
-          ></span>
+            data-typed-items="Software Developer" 
+          ></span>  
         </p>
       </div>
     </section>
@@ -156,7 +156,7 @@
           <div class="row">
             <div class="col-lg-4" data-aos="fade-right">
               <img
-                src="/assets/img/profile-img.png"
+                src="/Portfolio/assets/img/profile-img.png"
                 class="img-fluid"
                 alt="Profile PNG Image"
               />
@@ -238,119 +238,113 @@
               quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
               Quia fugiat sit in iste officiis commodi quidem hic quas.
             </p>
-          </div>
-
-          <div class="row skills-content">
-            <div class="col-lg-6" data-aos="fade-up">
-              <!-- added  -->
-              <div class="progress">
-                <span class="skill">Python <i class="val">95%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+            
+            <div style="display: flex;flex-direction: row;gap: 20px;">
+              <div class="box">
+                <div class="front">
+                  <div class="content">Ts TypeScript</div>
                 </div>
-
-                <!-- .. -->
-              </div>
-              <div class="progress">
-                <span class="skill">Java <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
                 </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">DSA <i class="val">95%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+              <div class="box">
+                <div class="front">
+                  <div class="content">JS</div>
                 </div>
-              </div>
-              <div class="progress">
-                <span class="skill">HTML <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="progress">
-                <span class="skill">CSS <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+              <div class="box">
+                <div class="front">
+                  <div class="content">React</div>
                 </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
                 </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">php <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+              <div class="box">
+                <div class="front">
+                  <div class="content">Python</div>
                 </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">MySql<i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                </div>
+              <div class="box">
+                <div class="front">
+                  <div class="content">Java</div>
+                </div>
+                </div>
+              <div class="box">
+                <div class="front">
+                  <div class="content">DSA</div>
+                </div>
+                </div>
+              <div class="box">
+                <div class="front">
+                  <div class="content">Version Control</div>
+                </div>
+                </div>
+              <div class="box">
+                <div class="front">
+                  <div class="content">Html</div>
+                </div>
+                </div>
+              <div class="box">
+                <div class="front">
+                  <div class="content">Css</div>
+                </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- slider script -->
+        <script>
+          let currentSlide = 0;
+          const slides = document.querySelectorAll(".slide");
+          const slideCount = slides.length;
+
+          function showSlide(index) {
+            if (index >= slideCount) {
+              currentSlide = 0;
+            } else if (index < 0) {
+              currentSlide = slideCount - 1;
+            } else {
+              currentSlide = index;
+            }
+            const slideWidth = slides[currentSlide].offsetWidth;
+            document.querySelector(".slider").style.transform = `translateX(-${
+              currentSlide * slideWidth
+            }px)`;
+          }
+
+          function nextSlide() {
+            showSlide(currentSlide + 1);
+          }
+
+          function prevSlide() {
+            showSlide(currentSlide - 1);
+          }
+
+          // Autoplay
+          let autoplayInterval = setInterval(nextSlide, 3000);
+
+          // Pause autoplay on mouseover
+          document
+            .querySelector(".slider-container")
+            .addEventListener("mouseenter", () => {
+              clearInterval(autoplayInterval);
+            });
+
+          // Resume autoplay on mouseleave
+          document
+            .querySelector(".slider-container")
+            .addEventListener("mouseleave", () => {
+              autoplayInterval = setInterval(nextSlide, 3000);
+            });
+        </script>
+
+        <!-- <section
+        style="background-color: black"
+        id="skills"
+        class="skills section-bg"
+      >
+
+          <div class="row skills-content">
+            <div class="col-lg-6" data-aos="fade-up">
+              <!-- added  -->
         <!-- Add Slick Slider CSS -->
       </section>
       <!-- End Skills Section -->
@@ -525,7 +519,7 @@
                   data-filter="*"
                   class="filter-active"
                 >
-                  All Projects
+                  ALL PROJECTS
                 </li>
                 <!-- <li data-filter=".filter-app">App</li> -->
                 <!-- <li data-filter=".filter-card">Card</li> -->

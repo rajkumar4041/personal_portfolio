@@ -484,7 +484,7 @@ section {
 
 /* resume download button css */
 .download-btn {
-  background-color: #f00285; /* Green */
+  background-color: #f00285;
   border: none;
   color: white;
   font-weight: bold;
@@ -499,6 +499,12 @@ section {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.download-btn:hover {
+  background-color: #4781cd;
+  color: white;
+}
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -1147,9 +1153,6 @@ section {
   color: white;
 }
 
-/* #education-spec {
-  background-color: #040b14;
-} */
 .bg-primary-for-edu {
   background-color: rgb(16, 149, 197);
 }
@@ -1194,14 +1197,9 @@ section {
 .download {
   height: 50px;
   width: 50px;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-
   padding: 5px;
   color: #f4f6fd;
   font-size: 14px;
-  /* position: fixed; */
   left: 50%;
   bottom: 0;
 }
@@ -1218,4 +1216,55 @@ section {
 .loc1 {
   width: auto;
   height: auto;
+}
+
+.box {
+  border-radius: 10px;
+  margin-top: 28px;
+  width: 150px;
+  height: 130px;
+  background-color: rgb(42, 74, 193);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  position: relative;
+}
+
+.box:hover {
+  border-radius: 10px;
+  transform: translateY(-8px);
+  box-shadow: 0 26px 46px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover .front {
+  border-radius: 10px;
+  background-color: #3498db;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  transition: background-color 0.3s;
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: rotateX(180deg) translateZ(-100px);
+  background-color: #2ecc71;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
 }
