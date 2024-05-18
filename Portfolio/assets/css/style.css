@@ -1,7 +1,7 @@
 /* general sec
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #272829;
 }
 
@@ -21,13 +21,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* to load fast  */
 .resume {
   background-color: rgba(4, 11, 20, 0.2);
-  background-image: url("../../assets/img/bg/benjamin-suter-mlOvsx4xdaA-unsplash.jpg"); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  background-image: url('../../assets/img/bg/benjamin-suter-mlOvsx4xdaA-unsplash.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -98,7 +98,7 @@ h6 {
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #header .profile h1 a,
@@ -242,12 +242,12 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url('../img/hero-bg.jpg') top center;
   background-size: cover;
 }
 
 #hero:before {
-  content: "";
+  content: '';
   background: rgba(5, 13, 24, 0.3);
   position: absolute;
   bottom: 0;
@@ -275,7 +275,7 @@ h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #hero p span {
@@ -336,7 +336,7 @@ section {
 }
 
 .section-title h2::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 50px;
@@ -419,7 +419,7 @@ section {
 .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   color: #122f57;
 }
@@ -430,7 +430,7 @@ section {
   margin-top: 20px;
   color: #122f57;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -441,9 +441,64 @@ section {
 /*--------------------------------------------------------------
 # skills
 --------------------------------------------------------------*/
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+  color: white;
+  min-height: 400px;
+}
+.skil .box {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(2);
+  box-shadow: 0 0 10px rgba(245, 245, 245, 0.737);
+}
+
+.box .front,
+.box .back {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.box .back {
+  /* display: none; */
+}
+
+.box:hover .front {
+  color: black;
+}
+
+.box:hover .back {
+  display: flex;
+}
+
+/* 
 .skills {
   color: white;
 }
+
+.skills-grid.animate {
+  animation: slideFromTop 1s ease forwards;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -476,7 +531,7 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: #149ddd;
-}
+} */
 
 /*--------------------------------------------------------------
 # Resume
@@ -497,7 +552,9 @@ section {
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .download-btn:hover {
@@ -525,7 +582,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #050d18;
   margin-bottom: 10px;
 }
@@ -552,7 +609,7 @@ section {
 }
 
 .resume .resume-item::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 16px;
   height: 16px;
@@ -610,7 +667,7 @@ section {
 }
 
 .portfolio .portfolio-wrap::before {
-  content: "";
+  content: '';
   background: rgba(19, 102, 153, 0.5);
   position: absolute;
   left: 0;
@@ -680,10 +737,7 @@ section {
   position: relative;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -691,10 +745,7 @@ section {
   border: 1px solid #149ddd;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #149ddd;
 }
 
@@ -795,7 +846,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   background-color: #040b14;
-  background-image: url("../../assets/img/bg/jr-korpa-stwHyPWNtbI-unsplash.jpg"); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  background-image: url('../../assets/img/bg/jr-korpa-stwHyPWNtbI-unsplash.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -862,7 +913,7 @@ section {
 }
 
 .testimonials .testimonial-item p::after {
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   border-top: 20px solid #fff;
@@ -1017,7 +1068,7 @@ section {
 }
 
 .contact .php-email-form .loading:before {
-  content: "";
+  content: '';
   display: inline-block;
   border-radius: 50%;
   width: 24px;
@@ -1051,7 +1102,7 @@ section {
   padding: 10px 15px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type='submit'] {
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
@@ -1060,7 +1111,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact .php-email-form button[type='submit']:hover {
   background: #37b3ed;
 }
 
@@ -1104,7 +1155,7 @@ section {
   display: inline-block;
   padding-right: 10px;
   color: #0e2442;
-  content: "/";
+  content: '/';
 }
 
 @media (max-width: 768px) {
@@ -1224,13 +1275,15 @@ section {
   width: 150px;
   height: 130px;
   background-color: rgb(42, 74, 193);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   transform-style: preserve-3d;
   perspective: 1000px;
   position: relative;
 }
 
-.box:hover {
+/* .box:hover {
   border-radius: 10px;
   transform: translateY(-8px);
   box-shadow: 0 26px 46px rgba(0, 0, 0, 0.2);
@@ -1239,12 +1292,12 @@ section {
 .box:hover .front {
   border-radius: 10px;
   background-color: #3498db;
-}
+} */
 
 .front,
 .back {
-  width: 100%;
-  height: 100%;
+  width: 20%;
+  height: 20%;
   position: absolute;
   backface-visibility: hidden;
   display: flex;
