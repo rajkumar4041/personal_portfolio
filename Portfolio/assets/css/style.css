@@ -476,12 +476,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: bold;
-}
-
-.box .back {
-  /* display: none; */
 }
 
 .box:hover .front {
@@ -492,6 +488,7 @@ section {
   display: flex;
 }
 
+/* FUTURE reference */
 /* 
 .skills {
   color: white;
@@ -1276,7 +1273,7 @@ section {
   margin-top: 28px;
   width: 150px;
   height: 130px;
-  background-color: rgb(42, 74, 193);
+  background-color: rgb(21, 120, 193);
   transition:
     transform 0.3s,
     box-shadow 0.3s;

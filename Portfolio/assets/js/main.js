@@ -140,7 +140,6 @@
     });
   }
 
-
   /**
    * Porfolio isotope and filter
    */
@@ -268,9 +267,9 @@
   /**
    * Animation on scroll
    */
-  window.addEventListener('load', () => {
+  window.addEventListener('scroll', () => {
     AOS.init({
-      duration: 100,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
       mirror: true,
