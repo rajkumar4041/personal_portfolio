@@ -465,6 +465,8 @@ section {
 .box:hover {
   transform: scale(2);
   box-shadow: 0 0 10px rgba(245, 245, 245, 0.737);
+  border-radius: 10px;
+  background-color: #cddb34;
 }
 
 .box .front,
